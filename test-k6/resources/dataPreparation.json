@@ -1,0 +1,121 @@
+{
+        "pet": {
+            "createPet": {
+                "type": "post",
+                "body": {
+                    "id": 1,
+                    "petId": 0,
+                    "quantity": 0,
+                    "shipDate": "2022-11-11T11:17:32.048Z",
+                    "status": "placed",
+                    "complete": true
+                }
+            },
+            "updatePet": {
+                "type": "put",
+                "body": {
+                    "id": 0,
+                    "category": {
+                        "id": 0,
+                        "name": "string"
+                    },
+                    "name": "cat",
+                    "photoUrls": [
+                        "string"
+                    ],
+                    "tags": [
+                        {
+                            "id": 0,
+                            "name": "string"
+                        }
+                    ],
+                    "status": "available"
+                }
+            },
+            "getPetById": {
+                "type": "get",
+                "body": {
+                    "id": 1
+                }
+            },
+            "deletePetByID": {
+                "type": "delete",
+                "body": {
+                    "id": 1
+                }
+            }
+        },
+        "store": {
+            "createOrder": {
+                "type": "post",
+                "body": {
+                    "id": 1,
+                    "petId": 0,
+                    "quantity": 0,
+                    "shipDate": "2022-11-11T11:17:32.048Z",
+                    "status": "placed",
+                    "complete": true
+                }
+            },
+            "getOrderById": {
+                "type": "get",
+                "body": {
+                    "id": 1
+                }
+            },
+            "deleteOrderById": {
+                "type": "delete",
+                "body": {
+                    "id": 1
+                }
+            }
+        },
+        "user": {
+            "createUser": {
+                "type": "post",
+                "body": {
+                    "id": 0,
+                    "username": "string2",
+                    "firstName": "string",
+                    "lastName": "string",
+                    "email": "string",
+                    "password": "string",
+                    "phone": "string",
+                    "userStatus": 0
+                }
+            },
+            "getUserByUsername": {
+                "type": "get",
+                "body": {
+                    "username": "string2"
+                }
+            },
+            "updateUser": {
+                "type": "put",
+                "body": {
+                    "firstname": "mario"
+                }
+            },
+            "deleteUser": {
+                "type": "delete",
+                "body": {
+                    "username": "string2"
+                }
+            },
+            "createUserWithArray": {
+                "type": "post",
+                "body": [
+                    {
+                        "id": 0,
+                        "username": "string",
+                        "firstName": "string",
+                        "lastName": "string",
+                        "email": "string",
+                        "password": "string",
+                        "phone": "string",
+                        "userStatus": 0
+                    }
+                ]
+            }
+        }
+    }

@@ -1,0 +1,1 @@
+k6 run src/test_pet.js --console-output="logs/debug.log"
