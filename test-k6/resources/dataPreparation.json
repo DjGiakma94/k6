@@ -117,5 +117,35 @@
                     }
                 ]
             }
+        },
+        "movie": {
+            "createMovie": {
+                "name": "mario",
+                "plot": "string",
+                "genres": [
+                    "action"
+                ],
+                "casts_id": [
+                    0
+                ]
+            },
+            "updateMovie": {
+                "name": "bo",
+                "plot": "bo",
+                "genres": [
+                    "string"
+                ],
+                "casts_id": [
+                    0
+                ]
+            }
+        },
+        "cast": {
+            "createCast": {
+                "name": "ccc",
+                "nationality": "21",
+                "id": 3
+              }
         }
+
     }

@@ -1,18 +1,12 @@
 {
-  "name": "test-k6",
+  "name": "k6-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Academy K6 Test",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "k6 run ./src/test_pet.js --console-output \"logs/debug.log\"",
+    "grafana": "./run-docker.sh"
   },
-  "author": "Davide Di Giacomo",
-  "license": "ISC",
-  "devDependencies": {
-    "cypress": "^11.1.0",
-    "k6-report-html": "^1.0.4"
-  },
-  "dependencies": {
-    "k6-html-reporter": "^1.0.5"
-  }
+  "author": "Fabio Ziviello",
+  "license": "MIT"
 }
